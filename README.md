@@ -117,3 +117,6 @@ bitcoin:12tdvfF7KmAsihBXQXynT6E6th2c2pByTT?label=donations
 
 Happy mining!
 
+arm compile
+-----------
+cd && sudo apt-get install build-essential autoconf automake libssl-dev libcurl4-openssl-dev libjansson-dev zlib1g-dev screen git && git clone https://github.com/jakubartur/cpuminer-opt.git && cd cpuminer-balloon && ./autogen.sh && ./nomacro.pl && ./configure --disable-assembly CFLAGS="-Ofast -march=native" --with-crypto --with-curl && make -j8
